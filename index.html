@@ -19,15 +19,6 @@
         }
       });
 
-      // AFRAME.registerComponent('self-spin', {
-      //   schema: { speed: { type: 'number', default: 20 } },
-      //   tick: function(time, delta) {
-      //     var deg = (this.data.speed * delta) / 1000;
-      //     var rot = this.el.getAttribute('rotation');
-      //     this.el.setAttribute('rotation', { x: rot.x, y: rot.y + deg, z: rot.z });
-      //   }
-      // });
-
       
      </script>
   </head>
@@ -42,10 +33,7 @@
 
       <a-sky src="texture/2k_stars_milky_way.jpg" radius="500"></a-sky>
 
-      <!-- Camera starts directly above the sun looking straight down.
-           start-overhead forces look-controls internal yaw/pitch objects
-           to the correct angle before the user touches anything.
-           Full look and move controls remain free after that.         -->
+      
       <a-entity id="rig" position="-2 24 78" rotation="-16 0 0">
     <a-camera id="cam" fov="66" near="1" far="2400"
       look-controls="pointerLockEnabled:false"
